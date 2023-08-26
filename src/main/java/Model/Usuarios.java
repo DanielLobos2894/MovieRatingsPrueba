@@ -1,4 +1,4 @@
-package Modelo;
+package Model;
 
 import jakarta.persistence.*;
 
@@ -17,7 +17,7 @@ public class Usuarios {
     private String correoElectronico;
 
     @Column(name="contrasena")
-    private int contraseña;
+    private String contraseña;
 
     public int getId_usuario() {
         return id_usuario;
@@ -43,11 +43,11 @@ public class Usuarios {
         this.correoElectronico = correoElectronico;
     }
 
-    public int getContraseña() {
+    public String getContraseña() {
         return contraseña;
     }
 
-    public void setContraseña(int contraseña) {
+    public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
 }

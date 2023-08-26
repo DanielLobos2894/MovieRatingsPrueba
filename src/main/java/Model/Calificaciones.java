@@ -1,10 +1,7 @@
-package Modelo;
+package Model;
 
-import com.sun.tools.classfile.Opcode;
 import jakarta.persistence.*;
 
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
 @Table(name = "calificaciones")

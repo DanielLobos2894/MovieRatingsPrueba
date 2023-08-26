@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Index</title>
+    <title>Listado de Películas</title>
 </head>
 <body>
-<h1> Hola Weones</h1>
+<h1>Listado de Películas</h1>
+<table>
+    <tr>
+        <th>Título</th>
+        <th>Año de Lanzamiento</th>
+        <!-- Agrega más encabezados de columna si es necesario -->
+    </tr>
+    <tr th:each="pelicula : ${peliculas}">
+        <td th:text="${pelicula.titulo}"></td>
+        <td th:text="${pelicula.anioLanzamiento}"></td>
+        <!-- Agrega más celdas de datos si es necesario -->
+    </tr>
+</table>
 </body>
 </html>
